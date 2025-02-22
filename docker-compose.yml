@@ -75,7 +75,7 @@ services:
       "--gpu-memory-utilization", "0.8",  # Reduce GPU memory usage
       "--max-num-seqs", "32",  # Limit concurrent sequences
       "--max-num-batched-tokens", "1024",  # Limit batch size
-      "--quantization", "8bit",  # Enable 8-bit quantization
+      "--quantization", "bitsandbytes",  # Use valid quantization method
       "--cpu-offload-gb", "4"  # Offload 4 GB to CPU
     ]
     restart: unless-stopped
